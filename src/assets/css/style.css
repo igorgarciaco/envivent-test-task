@@ -1,0 +1,163 @@
+/* reset  */
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+/* reset  */
+
+:root{
+    --primary-color: #009688;
+    --secondary-color: #263238;
+}
+
+.container{
+    max-width: 60rem;
+    margin: auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin: 1.25rem 0;
+}
+
+.nav-list li{
+    display: inline;
+}
+
+.nav-list li a{
+    color: var(--primary-color);
+    font-size: 0.875rem;
+}
+
+.nav-list li a:hover, .nav-list li a:focus{
+    opacity: 0.7;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner h1{
+    font-size: 3rem;
+    color: #fafafa;
+    font-weight: 400;
+
+    position: absolute;
+    bottom: 3rem;
+}
+
+.banner img{
+    display: block;
+}
+
+.team-members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-card{
+    margin: 1rem;
+    position: relative;
+    cursor: pointer;
+
+    overflow: hidden;
+}
+
+.member-card img{
+    display: block;
+}
+
+.member-card:nth-child(2){
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.member-card:hover .member-info{
+    height: 80%;
+    opacity: 1;
+}
+
+.member-info{
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: .5s ease;
+
+    opacity: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.member-info-head{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.member-info-head h2{
+    font-size: 2.125rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+.member-info-body{
+    font-size: 0.875rem;
+    padding: 2.125rem 1.25rem 1.5rem;
+
+}
+
+.learn-more a{
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    margin: 1rem 0 1rem 1.875rem;
+}
+
+.learn-more a:hover, footer a:focus{
+    opacity: 0.7;
+}
+
+.learn-more a span{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--secondary-color);
+    color: #eceff1;
+    font-size: 0.875rem;
+    margin-top: 1.875rem;
+}
+
+footer .social-links{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+footer .container{
+    display: flex;
+    align-items: center;
+}
+
+footer .column{
+    width: 33.3%;
+}
+
+footer .column:first-child{
+    margin-left: auto;
+    text-align: center;
+}
+
+footer .column:last-child{
+    text-align: end;
+}
