@@ -32,6 +32,11 @@
 
 .nav-list li{
     display: inline;
+    margin-right: 1.5rem;
+}
+
+.nav-list li:last-child{
+    margin-right: 0;
 }
 
 .nav-list li a{
@@ -41,6 +46,10 @@
 
 .nav-list li a:hover, .nav-list li a:focus{
     opacity: 0.7;
+}
+
+.nav-burger{
+    display: none;
 }
 
 .banner{

@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"
-        rel="preload" as="style">
-
-    <!-- <link rel="stylesheet" href="" type="text/css" media="screen and (max-width: 768px)" /> -->
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    rel="preload" as="style">
     <script src="https://kit.fontawesome.com/2c17420cb3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/media.css" type="text/css" media="screen and (max-width: 768px)" />
 
 </head>
 
@@ -23,10 +23,13 @@
         <div class="container">
             <div class="navbar">
                 <div class="nav-brand">
-                    <img src="./assets/img/techi-logo.png" alt="Techi Logo" width="196" height="55">
+                    <img src="./assets/img/techi-logo.jpg" alt="Techi Logo" width="196" height="55">
+                </div>
+                <div class="nav-burger">
+                    <i class="fa-solid fa-bars open-menu" id="burgerIcon"></i>
                 </div>
                 <ul class="nav-list">
-                    <li>
+                    <li class="active">
                         <a href="">Home</a>
                     </li>
                     <li>
@@ -42,7 +45,11 @@
     <main>
         <div class="container">
             <section class="banner">
-                <img src="./assets/img/coffee-drinkers.jpg" alt="Meet the team">
+                <picture>
+                    <source srcset="./assets/img/coffee-drinkers-mobile.jpg" media="(max-width: 767px)">
+                    <source srcset="./assets/img/coffee-drinkers.jpg" type="image/webp" media="(min-width: 768px)">
+                    <img src="./assets/img/coffee-drinkers.jpg" alt="Meet the team">
+                </picture>
                 <h1>Meet The Team</h1>
             </section>
 
@@ -125,6 +132,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
