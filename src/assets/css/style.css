@@ -83,19 +83,58 @@
     overflow: hidden;
 }
 
-.member-card img{
+.member-card .card-header{
+    position: relative;
+}
+
+.member-card .card-header img{
     display: block;
 }
 
+.member-card .card-header
 .member-card:nth-child(2){
     margin-left: 0;
     margin-right: 0;
 }
 
 .member-card:hover .member-info{
-    height: 80%;
+    height: 100%;
     opacity: 1;
 }
+
+.member-card:hover .member-info-header{
+    top: 0;
+}
+
+.member-info-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    position: absolute;
+    top: 65%;
+    right: 0;
+    z-index: 5;
+
+    transition: 500ms;
+}
+
+.member-info-header h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: white;
+
+    text-align: end;
+    line-height: 1;
+}
+
+.member-info-header h3{
+    color: white;
+    font-weight: lighter;
+    text-align: end;
+}
+
 
 .member-info{
     background: rgba(0, 0, 0, 0.7);
@@ -106,6 +145,13 @@
     height: 0;
     position: absolute;
     bottom: 0;
+
+    font-size: 0.875rem;
+    padding: 6rem 1.25rem 1.5rem;
+
+    display: flex;
+    align-items: flex-end;
+
 }
 
 .member-info-head{
@@ -118,11 +164,6 @@
     font-size: 2.125rem;
     text-transform: uppercase;
     margin-top: 1rem;
-}
-.member-info-body{
-    font-size: 0.875rem;
-    padding: 2.125rem 1.25rem 1.5rem;
-
 }
 
 .learn-more a{
